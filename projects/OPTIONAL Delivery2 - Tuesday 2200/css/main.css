@@ -1,0 +1,97 @@
+
+body {
+    background-color: rgb(238, 227, 203);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(150, 126, 118);
+    cursor: default;
+    min-width: 500px;
+}
+
+table {
+    margin: 50px auto 10px;
+    border-collapse: separate;
+    border-spacing: 7px;
+}
+
+.left-mines, .time, .lives, .hints {
+    border: 2px solid rgb(150, 126, 118);
+    width: 100px;
+    padding: 5px 10px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.left-mines, .lives {
+    left: 50px;
+}
+
+.time, .hints {
+    right: 50px;
+}
+
+.hints, .lives {
+    height: 33px;
+}
+
+td {
+    background-color: rgb(215, 192, 174);
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+td:hover {
+    background-color: rgb(183, 196, 207, 0.485);
+}
+
+.safe-click {
+    background-color: lightblue;
+    transition: background-color 1s;
+}
+
+.back-from-safe-click {
+    background-color: rgb(215, 192, 174);
+    transition: background-color 1s;
+}
+
+button {
+    color: rgb(150, 126, 118);
+    border-radius: 10px;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 50px;
+}
+
+.safe-click-button {
+    font-size: 13px;
+}
+
+.levels button, .safe-click-button button {
+    height: 40px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.safe-click-button button {
+    width: 200px;
+}
+
+.restart button {
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+}
+
+.delete-at-restart {
+    margin-top: 20px;
+}

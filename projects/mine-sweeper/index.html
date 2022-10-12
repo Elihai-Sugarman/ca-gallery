@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body onload="initGame()" oncontextmenu="return false">
+    <h1>Mine Sweeper</h1>
+    <div class="left-mines"></div>
+    <div class="time">0</div>
+    <div class="restart">
+        <button class="emoji" onclick="initGame()"></button>
+    </div>
+    <div class="levels">
+        <button onclick="changeLevel(1)">Beginner</button>
+        <button onclick="changeLevel(2)">Medium</button>
+        <button onclick="changeLevel(3)">Expert</button>
+    </div>
+    <div class="lives"></div>
+    <div class="hints"></div>
+    <div class="safe-click-button">
+        <button onclick="findSafeClick()">Safe Click</button>
+        </br>
+        <span class="safe-clicks-num"></span> clicks available
+    </div>
+    <table>
+    </table>
+    <div class="game-over"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>

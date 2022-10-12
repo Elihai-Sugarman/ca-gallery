@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(210, 215, 159);
+    color: rgb(72, 56, 56);
+}
+
+table {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.cell img {
+    width: 25px;
+    height: auto;
+}
+
+.floor {
+    background-color: rgb(144, 183, 125);
+}
+
+.wall {
+    background-color: rgb(66, 133, 91);
+}
+
+.game-over {
+    display: none;
+    margin: auto;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(144, 183, 125);
+    color: rgb(72, 56, 56);
+    font-weight: bold;
+    border: 2px solid rgb(66, 133, 91);
+    cursor: pointer;
+    padding: 2px 7px;
+    box-shadow: 7px 8px 16px -1px rgba(0,0,0,0.49);
+}
