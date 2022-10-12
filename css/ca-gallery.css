@@ -9,35 +9,45 @@ body {
     
 }
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label p{
+    margin-bottom: 3px;
+    text-align: left;
+}
 input {
-    margin-left: 50%;
+    /* margin-left: 50%;
     transform: translate(-50%);
-    width: 80%;
+    width: 80%; */
     /* margin-left: auto; */
     /* margin-right: auto; */
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 
 .msg-body {
-    height: 200px;
+    /* height: 200px; */
 }
 
 .contact-btn {
-    margin-left: 50%;
-    transform: translate(-50%);
+    /* margin-left: 50%;
+    transform: translate(-50%); */
 }
 
 p {
     line-height: 1.75;
 }
 a {
-    color: #fed136;
+    color: lightblue;
 }
 a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #fec503;
+    color: rgb(114, 162, 179);
 }
 h1,
 h2,
@@ -71,11 +81,11 @@ section h3.section-subheading {
     }
 }
 ::-moz-selection {
-    background: #fed136;
+    background: lightblue;
     text-shadow: none;
 }
 ::selection {
-    background: #fed136;
+    background: lightblue;
     text-shadow: none;
 }
 img::selection {
@@ -85,7 +95,7 @@ img::-moz-selection {
     background: transparent;
 }
 body {
-    -webkit-tap-highlight-color: #fed136;
+    -webkit-tap-highlight-color: lightblue;
 }
 .offcanvas-btn {
     z-index: 100000;
@@ -154,19 +164,19 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: lightblue;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: lightblue;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #fec503;
+    color: rgb(114, 162, 179);
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
@@ -179,7 +189,7 @@ body {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: lightblue;
 }
 @media (min-width: 992px) {
     
@@ -474,7 +484,7 @@ header.masthead .intro-text .intro-heading {
     color: white;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
-    background-color: #fed136;
+    background-color: lightblue;
 }
 .timeline > li .timeline-image h4 {
     font-size: 10px;
@@ -648,7 +658,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: lightblue;
 }
 .flex-align-center {
     display: flex;
@@ -656,33 +666,33 @@ ul.social-buttons li a:hover {
     align-items: center;
 }
 .text-primary {
-    color: #fed136 !important;
+    color: lightblue !important;
 }
 .btn-primary {
     font-weight: 700;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: lightblue;
+    background-color: lightblue;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 .btn-primary.focus,
 .btn-primary:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: blue;
+    background-color: rgb(114, 162, 179);
 }
 .btn-primary:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: rgb(61, 125, 229);
+    background-color: rgb(114, 162, 179);
 }
 .btn-primary.active,
 .btn-primary:active,
 .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: rgb(61, 125, 229);
+    background-color: rgb(114, 162, 179);
 }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -694,7 +704,7 @@ ul.social-buttons li a:hover {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle:hover {
     color: white;
-    border-color: #b48b01;
+    border-color: blue;
     background-color: #dcab01;
 }
 .btn-primary.active,
@@ -711,11 +721,11 @@ ul.social-buttons li a:hover {
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: lightblue;
+    background-color: lightblue;
 }
 .btn-primary .badge {
-    color: #fed136;
+    color: lightblue;
     background-color: white;
 }
 .btn-xl {
@@ -724,28 +734,28 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px;
     border-radius: 3px;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: lightblue;
+    background-color: lightblue;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 .btn-xl.focus,
 .btn-xl:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: blue;
+    background-color: rgb(114, 162, 179);
 }
 .btn-xl:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: rgb(61, 125, 229);
+    background-color: rgb(114, 162, 179);
 }
 .btn-xl.active,
 .btn-xl:active,
 .open > .btn-xl.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: rgb(61, 125, 229);
+    background-color: rgb(114, 162, 179);
 }
 .btn-xl.active.focus,
 .btn-xl.active:focus,
@@ -757,7 +767,7 @@ fieldset[disabled] .btn-primary:hover {
 .open > .btn-xl.dropdown-toggle:focus,
 .open > .btn-xl.dropdown-toggle:hover {
     color: white;
-    border-color: #b48b01;
+    border-color: blue;
     background-color: #dcab01;
 }
 .btn-xl.active,
@@ -774,11 +784,11 @@ fieldset[disabled] .btn-primary:hover {
 fieldset[disabled] .btn-xl.focus,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:hover {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: lightblue;
+    background-color: lightblue;
 }
 .btn-xl .badge {
-    color: #fed136;
+    color: lightblue;
     background-color: white;
 }
 
