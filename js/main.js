@@ -22,7 +22,7 @@ function renderProjects(projects) {
       </a>
       <div class="portfolio-caption">
       <h4>${projects[i].name}</h4>
-      <p class="text-muted">${projects[i].desc}</p>
+      <p class="text-muted">${projects[i].title}</p>
       </div>
       </div>`
     }
@@ -34,22 +34,25 @@ function renderModal(projectIdx) {
     var project = projects[projectIdx]
     var elModal = document.querySelector('.modal-body')
     elModal.querySelector('h2').innerText = project.name
-    elModal.querySelector('.item-intro').innerText = project.desc
+    elModal.querySelector('.item-intro').innerText = project.title
     elModal.querySelector('.img-fluid').src = `img/portfolio/${project.id}.png`
     elModal.querySelector('.list-inline').innerHTML = `<li>Date: ${new Date(
         project.publishedAt
     ).toLocaleDateString()}</li>
     <li>Lables: ${project.labels}</li>`
+    elModal.querySelector('.proj-desc').innerText = project.desc
+    elModal.querySelector('a').href = project.url
 }
 
 function onSubmit(ev) {
     ev.preventDefault()
     var email = $('[name=email]').val()
     var subject = $('[name=subject]').val()
-    var message = $('[name=msg-txt]').val()
+    var message = $('.msg-txt').val()
+    console.log(message)
     $('[name=email]').val('')
     $('[name=subject]').val('')
-    $('[name=msg-txt]').val('')
+    $('.msg-txt').val('')
     // `https://mail.google.com/mail/?view=cm&fs=1&to=me@example.com&su=SUBJECT&body=BODY`
     window.open(
         `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${message}`
